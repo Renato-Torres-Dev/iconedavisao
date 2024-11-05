@@ -1,0 +1,1139 @@
+@keyframes headerAnim{
+  0%{
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 60px;
+  }
+  100%{
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0px;
+  }
+}
+
+@keyframes btnAnim1 {
+  0%{
+    background-color: black;
+    color: white;
+  }
+  100%{
+    background-color: white;
+    color: black;
+  }
+}
+
+@keyframes btnAnim2 {
+  0%{
+    background-color: #015D8C;
+    color: white;
+  }
+  100%{
+    background-color: white;
+    color: #015D8C;
+  }
+  
+}
+
+@keyframes btnAnim3 {
+  0%{
+    color: #015D8C;
+  }
+  100%{
+    color: black;
+  }
+}
+
+@keyframes btnAnim4 {
+  0%{
+    background-color: #015D8C;
+    color: white;
+  }
+  100%{
+    border: #015D8C 1px solid;
+    background-color: white;
+    color: #015D8C;
+  }
+  
+}
+
+@keyframes btnAnim5 {
+  0%{
+    background-color: white;
+    color: #015D8C;
+  }
+  100%{
+    background-color: #003853;
+    color: white;
+  }
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+header .hidden-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  width: 100%;
+  background-color: black;
+}
+
+header .hidden-header-container{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+header .hidden-header-container .contato div h1{
+  display: flex;
+  margin: 0px;
+}
+
+header img{
+  height: 32px;
+}
+
+header h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
+header .contato{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header .contato div{
+  display: flex;
+  align-items: center;
+}
+
+header .contato div img{
+  padding: 0px 10px;
+}
+
+header .busca{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+header .busca input{
+  font-family: 'Poppins', sans-serif;
+  width: 350px;
+  height: 45px;
+  border-radius: 20px;
+  padding-left: 10px;
+  background-color: rgba(217, 217, 217, 0.3);
+  color: white;
+}
+
+header .sociais{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .sociais div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+}
+
+header .fixed-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 60px;
+  transition: background-color 0.5s ease, top 0.5s ease;
+  z-index: 999;
+}
+
+header .fixed-header.active{
+  background-color: black;
+  top: 0px;
+}
+
+header .fixed-header-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+header .fixed-header-container .icone{
+  display: flex;
+  width: 200px;
+  justify-content: center;
+}
+
+header .fixed-header-container .icone img{
+  width: 100px;
+  height: 60px;
+}
+
+header .fixed-header-container .menu{
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+header .fixed-header-container .menu nav{
+  display: flex;
+  flex-direction: row;
+}
+
+header .fixed-header-container .menu nav .menu-item{
+  display: flex;
+  flex-direction: row;
+}
+
+header .fixed-header-container .menu nav .menu-item ul li .menu-item-text{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+
+header .fixed-header-container .menu nav .menu-item ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .fixed-header-container .menu nav .menu-item ul li{
+  position: relative;
+  display: inline-block;
+}
+
+header .fixed-header-container .menu nav .menu-item ul li a{
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+header .fixed-header-container .menu nav .menu-item ul li a:hover{
+  color: #015D8C;
+}
+
+header .fixed-header-container .menu nav .menu-item li ul{
+  display: block;
+  position: absolute;
+  min-width: 200px;
+  padding: 0;
+  background-color: black;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+header .fixed-header-container .menu nav .menu-item li:hover ul{
+  opacity: 1;
+  visibility: visible;
+  max-height: 500px;
+}
+
+header .fixed-header-container .menu nav .menu-item li ul li{
+  display: block;
+}
+
+header .mobile{
+  display: none;
+}
+
+header .btn-open-menu{
+  display: none;
+}
+
+header .menu-mobile{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header .hidden-header{
+    display: none;
+  }
+
+  header .fixed-header{
+    display: none;
+  }
+
+  header .btn-open-menu{
+    display: block;
+  }
+
+  header .mobile{
+    display: flex;
+    width: 100%;
+    background-color: black;
+  }
+
+  header .show-menu{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    padding: 20px 6%;
+    align-items: center;
+  }
+
+  header .show-menu img{
+    width: 100%;
+    height: 70px;
+  }
+
+  header .btn-open-menu i{
+    color: white;
+    font-size: 30px;
+  }
+  
+  header .menu-mobile{
+    display: block;
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  header .menu-mobile.abrir-menu{
+    width: 70%;
+  }
+
+  header .menu-mobile.abrir-menu + .overlay-menu{
+    display: block;
+  }
+  
+  header .menu-mobile nav ul{
+    text-align: right;
+  }
+  
+  header .menu-mobile nav ul li a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+    padding: 20px 6%;
+  }
+  
+  header .menu-mobile nav ul li a:hover{
+    background-color: #015D8C;
+    color: black;
+  }
+  
+  header .menu-mobile .btn-close{
+    padding: 20px 4%;
+  }
+  
+  header .menu-mobile .btn-close i{
+    color: white;
+    font-size: 30px;
+  }
+
+  header .overlay-menu{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 8888;
+    display: none;
+  }
+}
+
+
+body #home-banner{
+  background-image: url(../assets/imgs/backgrounds/bg-home-banner.png);
+  background-size: cover;
+}
+
+body #home-banner .home-banner-container{
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  height: 1000px;
+  padding-top: 150px;
+}
+
+body #home-banner .home-banner-container #banner-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+body #home-banner .home-banner-container .banner-item{
+  background-color: white;
+  border: 2px solid #015D8C;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #015D8C;
+  position: relative;
+  text-align: center;
+}
+
+body #home-banner .home-banner-container .banner-item .banner-image{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+body #tec{
+  display: flex;
+  width: 100%;
+  height: 512px;
+  background-image: url(../assets/imgs/backgrounds/bg-secao-02.png);
+}
+
+body #tec .tec-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 40px 20px;
+}
+
+body #tec .tec-container .tec-title{
+  margin: 20px 0px;
+}
+
+body #tec .tec-container .tec-title h1{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+}
+
+body #tec .tec-container .tec-text{
+  margin: 20px 20px;
+}
+
+body #tec .tec-container .tec-text h3{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
+
+body #tec .tec-container .tec-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body #tec .tec-container a{
+  display: flex;
+  text-decoration: none;
+}
+
+body #tec .tec-container .tec-button .tec-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: black;
+  margin: 20px 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+body #tec .tec-container .tec-button .tec-btn:hover{
+  animation: btnAnim1 0.6s forwards;
+}
+
+body #tec .tec-container .tec-button .tec-btn .tec-button-text{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+
+body #reference{
+  display: flex;
+  width: 100%;
+  height: 512px;
+  background-image: url(../assets/imgs/backgrounds/bg-secao-3.png);
+}
+
+body #reference .reference-container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 40px 20px;  
+}
+
+body #reference .reference-container .reference-title{
+  margin: 20px 0px;
+}
+
+body #reference .reference-container .reference-title h1{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+body #reference .reference-container .reference-title h2{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+body #reference .reference-container .reference-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+body #reference .reference-container .reference-text h3{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+body #reference .reference-container .reference-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body #reference .reference-container .reference-button a{
+  text-decoration: none;
+}
+
+body #reference .reference-container .reference-button .reference-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #015D8C;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+body #reference .reference-container .reference-button .reference-btn:hover{
+  animation: btnAnim2 0.6s forwards;
+}
+
+body #reference .reference-container .reference-button .reference-btn h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+body #points{
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-image: url(../assets/imgs/backgrounds/bg-secao-04.png);
+}
+
+body #points .points-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  margin: 40px 20px;
+}
+
+body #points .points-container .points-title{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+
+body #points .points-container .points-title h1{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+body #points .points-container .points-title h2{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 85%;
+}
+
+body #points .points-container .points-card-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+  width: 85%;
+}
+
+body #points .points-container .points-card-grid .points-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+body #points .points-container .points-card-grid .points-card .points-card-title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+body #points .points-container .points-card-grid .points-card .points-card-title h3{
+  font-family: 'Poppins', sans-serif;
+  color:white;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+
+body #points .points-container .points-card-grid .points-card .points-card-title img{
+  width: 70px;
+  height: 70px;
+}
+
+body #points .points-container .points-card-grid .points-card p{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+body #points .points-container .points-card-grid .points-card .points-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+body #points .points-container .points-card-grid .points-card .points-button a{
+  text-decoration: none;
+}
+
+body #points .points-container .points-card-grid .points-card .points-button .points-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #015D8C;
+}
+
+body #points .points-container .points-card-grid .points-card .points-button .points-btn:hover{
+  animation: btnAnim3 0.6s forwards
+}
+
+body #points .points-container .points-card-grid .points-card .points-button .points-btn h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+body #tratamentos{
+  display: flex;
+  width: 100%;
+  height: 512px;
+  background-image: url(../assets/imgs/backgrounds/bg-secao-5.png);
+}
+
+body #tratamentos .tratamentos-container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 40px 20px;
+}
+
+body #tratamentos .tratamentos-container .tratamentos-title{
+  margin: 20px 0px;
+}
+
+body #tratamentos .tratamentos-container .tratamentos-title h1{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+body #tratamentos .tratamentos-container .tratamentos-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+body #tratamentos .tratamentos-container .tratamentos-text h3{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+body #tratamentos .tratamentos-container .tratamentos-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body #tratamentos .tratamentos-container .tratamentos-button a{
+  text-decoration: none;
+}
+
+body #tratamentos .tratamentos-container .tratamentos-button .tratamentos-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #015D8C;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+body #tratamentos .tratamentos-container .tratamentos-button .tratamentos-btn:hover{
+  animation: btnAnim2 0.6s forwards;
+}
+
+body #news{
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-image: url(../assets/imgs/backgrounds/bg-secao-06.png);
+}
+
+body #news .news-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  margin: 40px 20px;
+}
+
+body #news .news-container .news-title{
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+body #news .news-container .news-title h1{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+body #news .news-container .news-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 20px 0px;
+}
+
+body #news .news-container .news-cards .news-card{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: 250px;
+  height: 350px;
+}
+
+body #news .news-container .news-cards .news-card .news-card-img{
+  padding: 0;
+}
+
+body #news .news-container .news-cards .news-card .news-card-img img{
+  width: 230px;
+  height: 165px;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+body #news .news-container .news-cards .news-card .news-card-title h2{
+  font-family: 'Poppins', sans-serif;
+  color: #015D8C;
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+body #news .news-container .news-cards .news-card .news-card-resume p{
+  font-family: 'Poppins', sans-serif;
+}
+
+body #news .news-container .news-cards .news-card .news-card-box-button{
+  display: flex;
+  height: 70px;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+body #news .news-container .news-cards .news-card .news-card-box-button .news-card-button{
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+body #news .news-container .news-cards .news-card .news-card-box-button .news-card-button a{
+  text-decoration: none;
+}
+
+body #news .news-container .news-cards .news-card .news-card-box-button .news-card-button .news-card-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #015D8C;
+  margin: 20px 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+body #news .news-container .news-cards .news-card .news-card-box-button .news-card-button .news-card-btn:hover{
+  animation: btnAnim4 0.6s forwards;
+}
+
+body #news .news-container .news-cards .news-card .news-card-box-button .news-card-button .news-card-btn h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+body #news .news-container .news-box-btn{
+  display: flex;
+  margin: 40px 20px;
+}
+
+body #news .news-container .news-box-btn a{
+  text-decoration: none;
+}
+
+body #news .news-container .news-box-btn .news-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+  margin: 20px 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #015D8C; 
+}
+
+body #news .news-container .news-box-btn .news-btn h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+body #news .news-container .news-box-btn .news-btn:hover{
+  animation: btnAnim5 0.6s forwards;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+footer .footer-container{
+  display: flex;
+  margin: 40px 40px;
+}
+
+footer .footer-information{
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-information .footer-address{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  line-height: 25px;
+  margin: 10px 0px;
+}
+
+footer .footer-information .footer-address .unit h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+footer .footer-information .footer-address .address h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+footer .footer-information .footer-tel{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+footer .footer-information .footer-tel .name h1{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer .footer-information .footer-tel .tel{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+footer .footer-menu{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 70px;
+  align-items: flex-end;
+}
+
+footer .footer-menu div a{
+  text-decoration: none;
+}
+
+footer .footer-menu div h1 a{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer .footer-second-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+footer .footer-second-container .imgs-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+footer .footer-second-container .imgs-container div img{
+  width: 100%;
+  height: 150px;
+}
+
+@media (max-width: 768px) {
+  body #points .points-container .points-card-grid{
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+  
+  body #tratamentos{
+    height: 600px;
+  }
+
+  body #news .news-container .news-cards{
+    justify-content: space-evenly;
+  }
+
+  body #news .news-container .news-cards .news-card{
+    width: 180px;
+    height: 290px;  
+  }
+
+  body #news .news-container .news-cards .news-card .news-card-img img{
+    width: 160px;
+    height: 120px;
+  }
+
+  body #news .news-container .news-cards .news-card .news-card-title h2{
+    font-size: 16px;
+  }
+
+  body #news .news-container .news-cards .news-card .news-card-resume p{
+    font-size: 12px;
+  }
+
+  body #news .news-container .news-cards .news-card .news-card-box-button .news-card-button .news-card-btn{
+    width: 100px;
+    height: 30px;
+  }
+
+  footer .footer-information .footer-address{
+    margin: 0px;
+  }
+  
+  footer .footer-information .footer-tel{
+    margin-top: 10px;
+  }
+
+  footer .footer-menu{
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 425px) {
+  body #home-banner .home-banner-container{
+    justify-content: center;
+    padding-top: 60px;
+  }
+
+  body #tec .tec-container .tec-title{
+    margin: 10px 0px;
+  }
+
+  body #reference{
+    height: auto;
+  }
+
+  body #reference .reference-container .reference-text h3{
+    font-weight: 300;
+  }
+
+  body #reference .reference-container .reference-button{
+    margin-top: 30px;
+  }
+
+  body #points .points-container .points-card-grid{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  body #tratamentos{
+    height: auto;
+  }
+
+  body #tratamentos .tratamentos-container .tratamentos-button{
+    margin-top: 30px;
+  }
+
+  body #news .news-container .news-cards{
+    flex-direction: column;
+  }
+
+  body #news .news-container .news-cards .news-card{
+    margin: 20px 0px;
+    width: 250px;
+    height: 350px;
+  }
+
+  body #news .news-container .news-cards .news-card .news-card-img img{
+    width: 230px;
+    height: 165px;
+  }
+
+  body #news .news-container .news-cards .news-card .news-card-title h2{
+    font-size: 18px;
+  }
+
+  body #news .news-container .news-cards .news-card .news-card-resume p{
+    font-size: 16px;
+  }
+  
+  body #news .news-container .news-cards .news-card .news-card-box-button .news-card-button .news-card-btn{
+    width: 150px;
+    height: 40px;
+  }
+
+  footer .footer-container{
+    flex-direction: column;
+  }
+
+  footer .footer-menu{
+    margin: 40px 0px;
+    align-items: flex-start;
+  }
+
+  footer .footer-second-container .imgs-container div img{
+    height: 90px;
+  }
+}

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/pagina-doencas.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="scripts/menuMobile.js" defer></script>
+  <title>Ícone da Visão - Hospital de Olhos</title>
+</head>
+<body>
+  <header>
+    <div class="hidden-header">
+      <div class="hidden-header-container">
+        <div class="contato">
+          <div>
+            <img src="../assets/imgs/icons/chamada-telefonica.png">
+            <h1>4000-2662</h1>
+          </div>
+          <div>
+            <a href="/">
+              <img src="../assets/imgs/icons/whatsapp-branco.png">
+            </a>
+          </div>
+        </div>
+        <div class="busca">
+          <input type="search" placeholder="Buscar no Ícone">
+        </div>
+        <div class="sociais ">
+          <div>
+            <a href="https://www.instagram.com/iconedavisao/" target="_blank">
+              <img src="../assets/imgs/icons/instagram-branco.png">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.youtube.com/@iconedavisao7653" target="_blank">
+              <img src="../assets/imgs/icons/youtube.png">
+            </a>
+          </div>
+          <div>
+            <a href="" target="_blank">
+              <img src="../assets/imgs/icons/envelope.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="fixed-header" class="fixed-header">
+      <div class="fixed-header-container">
+        <div class="icone">
+          <a href="/">
+            <img src="../assets/imgs/icons/icone-visao-logo.png">
+          </a>
+        </div>
+        <div class="menu">
+          <nav>
+            <div class="menu-item">
+              <ul>
+                <li>
+                  <a class="menu-item-text" href="/">O ÍCONE</a>
+                  <ul>
+                    <li><a class="menu-item-text" href="/">CONVÊNIOS</a></li>
+                    <li><a class="menu-item-text" href="/quem-somos.html">QUEM SOMOS</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="menu-item-text" href="/">SERVIÇOS</a>
+                  <ul>
+                    <li><a class="menu-item-text" href="/">TECNOLOGIAS</a></li>
+                    <li><a class="menu-item-text" href="/">TURISMO MÉDICO</a></li>
+                  </ul>
+                </li>
+                <li><a class="menu-item-text" href="/especialistas.html">ESPECIALISTAS</a></li>
+                <li>
+                  <a class="menu-item-text" href="/doencas-oculares.html">DOENÇAS OCULARES</a>
+                  <ul>
+                    <li><a class="menu-item-text" href="/doencas-oculares/catarata.html">CATARATA</a></li>
+                    <li><a class="menu-item-text" href="/doencas-oculares/ceratocone.html">CERATOCONE</a></li>
+                    <li><a class="menu-item-text" href="/doencas-oculares/doencas-refrativas.html">DOENÇAS REFRATIVAS</a></li>
+                    <li><a class="menu-item-text" href="/doencas-oculares/retina-e-vitreo.html">DOENÇAS DA RETINA E VÍTREO</a></li>
+                    <li><a class="menu-item-text" href="/doencas-oculares/envelhecimento-palpebral.html">ENVELHECIMENTO PALPEBRAL</a></li>
+                    <li><a class="menu-item-text" href="/doencas-oculares/glaucoma.html">GLAUCOMA</a></li>
+                    <li><a class="menu-item-text" href="/doencas-oculares/olho-seco.html">OLHO SECO</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="menu-item-text" href="/">TRATAMENTOS</a>
+                  <ul>
+                    <li><a class="menu-item-text" href="/">CATARATA</a></li>
+                    <li><a class="menu-item-text" href="/">CERATOCONE</a></li>
+                    <li><a class="menu-item-text" href="/">CIRURGIAS DE CORREÇÃO DE GRAU</a></li>
+                    <li><a class="menu-item-text" href="/">ESTÉTICA</a></li>
+                    <li><a class="menu-item-text" href="/">GLAUCOMA</a></li>
+                    <li><a class="menu-item-text" href="/">OLHO SECO</a></li>
+                    <li><a class="menu-item-text" href="/">RETINA E VÍTREO</a></li>
+                    <li><a class="menu-item-text" href="/">SPA DA VISÃO</a></li>
+                  </ul>
+                </li>
+                <li><a class="menu-item-text" href="/novidades.html">NOVIDADES</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mobile">
+      <div class="show-menu">
+        <div class="icon-img">
+          <img src="assets/imgs/icons/icone-visao-logo.png"/>
+        </div>
+        <div class="btn-open-menu" id="btn-mobile-menu">
+          <i class="bi bi-list"></i>
+        </div>
+      </div>
+  
+      <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-close">
+          <i class="bi bi-x-lg"></i>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/">O ÍCONE</a></li>
+            <li><a href="/quem-somos.html">QUEM SOMOS</a></li>
+            <li><a href="/">SERVIÇOS</a></li>
+            <li><a href="/especialistas.html">ESPECIALISTAS</a></li>
+            <li><a href="/doencas-oculares.html">DOENÇAS OCULARES</a></li>
+            <li><a href="/">TRATAMENTOS</a></li>
+            <li><a href="/novidades.html">NOVIDADES</a></li>
+            <li><a href="/">CONTATO</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="overlay-menu" id="overlay-menu"></div>
+    </div>
+  </header>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+
+    window.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+        mobileMenu.classList.remove('active');
+      }
+    });
+
+    const menuItems = mobileMenu.querySelectorAll('a');
+    menuItems.forEach(item => {
+      item.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+      });
+    });
+  </script>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('fixed-header');
+
+      if (window.scrollY > 1) {
+        header.classList.add('active');
+        console.log(header)
+      } else {
+        header.classList.remove('active');
+      }
+    });
+  </script>
+
+  <main>
+    <section id="catarata">
+      <div class="catarata-container">
+        <div class="catarata-banner">
+          <div class="banner-title">
+            <h1>
+              Ceratocone: Entenda a Doença e o Tratamento para Manter a Saúde da Visão
+            </h1>
+          </div>
+          <div class="banner-resume">
+            <h2>
+              O ceratocone é uma doença progressiva e degenerativa da córnea que afeta a visão 
+              de milhões de pessoas ao redor do mundo. Com o tempo, a estrutura da córnea se deforma, 
+              assumindo um formato cônico e irregular, o que causa distorções visuais e compromete a 
+              qualidade de vida. Embora a doença geralmente se manifeste na adolescência ou no início 
+              da fase adulta, o diagnóstico precoce e o tratamento adequado podem frear o avanço do 
+              ceratocone e preservar a saúde visual.
+            </h2>
+          </div>
+        </div>
+        <div class="catarata-about">
+          <div class="container-img">
+            <img src="../assets/imgs/doencas/visao_ceratocone.jpg">
+            <img src="../assets/imgs/doencas/visao_sem_ceratocone.jpg">
+          </div>
+          <div class="text">
+            <div class="subtitle">
+              <h1>
+                O que é Ceratocone?
+              </h1>
+            </div>
+            <div class="resume">
+              <h3>
+                O ceratocone é uma condição que afeta a córnea, a camada transparente e curva que cobre 
+                a parte frontal do olho. Em olhos saudáveis, a córnea é esférica e ajuda a focalizar a 
+                luz de maneira adequada na retina. No ceratocone, no entanto, a córnea afina e se projeta 
+                para a frente, assumindo um formato de cone. Esse afinamento progressivo resulta em uma 
+                superfície irregular, que distorce a visão e dificulta o foco.
+              </h3>
+            </div>
+          </div>
+
+          <div class="text">
+            <div class="subtitle">
+              <h1>
+                Causas da Ceratocone
+              </h1>
+            </div>
+            <div class="resume">
+              <h3>
+                As causas do ceratocone ainda não são totalmente compreendidas, mas vários fatores de risco 
+                estão associados à condição. Entre eles, estão:
+                <ul>
+                  <li><strong>Predisposição genética:</strong> é comum observar o ceratocone em famílias, sugerindo uma influência genética.</li>
+                  <li><strong>Esfregar os olhos:</strong> o ato de esfregar os olhos com frequência e intensidade pode provocar o enfraquecimento da córnea, agravando a progressão do ceratocone.</li>
+                  <li><strong>Doenças oculares e alérgicas:</strong> pessoas com alergias oculares ou condições como asma, eczema e síndrome de Down têm uma maior predisposição ao ceratocone.</li>
+                  <li><strong>Uso de lentes de contato inadequadas:</strong> o uso incorreto ou prolongado de lentes de contato pode agravar a condição.</li>
+                </ul>
+              </h3>
+            </div>
+          </div>
+
+          <div class="text">
+            <div class="subtitle">
+              <h1>
+                Sintomas da Ceratocone
+              </h1>
+            </div>
+            <div class="resume">
+              <h3>
+                Os sintomas do ceratocone podem variar conforme o estágio da doença, mas, em geral, incluem:
+                <ul>
+                  <li>Visão embaçada e distorcida.</li>
+                  <li>Sensibilidade à luz (fotofobia).</li>
+                  <li>Dificuldade para enxergar em ambientes com pouca iluminação.</li>
+                  <li>Percepção de halos ao redor de luzes, especialmente à noite.</li>
+                  <li>Mudanças frequentes na prescrição de óculos, sem melhora significativa na qualidade visual.</li>
+                </ul>
+                O ceratocone pode progredir lentamente por anos, sendo essencial consultar um oftalmologista ao perceber 
+                qualquer alteração visual, pois o tratamento precoce faz a diferença.
+              </h3>
+            </div>
+          </div>
+
+          <div class="text">
+            <div class="subtitle">
+              <h1>
+                Diagnóstico da Ceratocone
+              </h1>
+            </div>
+            <div class="resume">
+              <h3>
+                O diagnóstico do ceratocone é feito por meio de exames específicos, como a topografia e a 
+                tomografia da córnea, que medem a curvatura e a espessura da córnea, identificando as 
+                irregularidades que caracterizam a condição. Outros exames, como a paquimetria e a 
+                ceratometria, também são úteis para avaliar o afinamento da córnea e o estágio da doença.
+              </h3>
+            </div>
+          </div>
+
+          <div class="text">
+            <div class="subtitle">
+              <h1>
+                Tratamento do Ceratocone: Opções para Cada Estágio
+              </h1>
+            </div>
+            <div class="resume">
+              <h3>
+                O tratamento do ceratocone varia de acordo com o estágio e a progressão da doença. Conheça as principais opções:
+                <ul>
+                  <li><strong>Óculos e Lentes de Contato Rígidas:</strong> nos estágios iniciais, os óculos podem corrigir parcialmente a visão, mas, com o avanço, as lentes de contato rígidas gás-permeáveis são mais eficazes, pois criam uma superfície uniforme sobre a córnea, melhorando o foco visual.</li>
+                  <li><strong>Crosslinking de Córnea:</strong> é um tratamento inovador que fortalece as fibras de colágeno da córnea, retardando ou estabilizando a progressão do ceratocone. O crosslinking é indicado para pacientes com ceratocone em estágio inicial a moderado e tem sido eficaz para impedir a deformação contínua da córnea.</li>
+                  <li><strong>Anéis intracorneanos:</strong> esses implantes, colocados no interior da córnea, ajudam a regularizar sua curvatura, melhorando a visão. Os anéis são uma opção para pacientes com ceratocone em estágio intermediário que não se adaptaram bem às lentes de contato.</li>
+                  <li><strong>Transplante de Córnea:</strong> em casos avançados, quando outros tratamentos não são eficazes, o transplante de córnea pode ser necessário. Essa cirurgia substitui a córnea deformada por uma saudável, restabelecendo a qualidade visual.</li>
+                </ul>
+              </h3>
+            </div>
+          </div>
+
+          <div class="text">
+            <div class="subtitle">
+              <h1>
+                A Importância do Diagnóstico Precoce e do Acompanhamento
+              </h1>
+            </div>
+            <div class="resume">
+              <h3>
+                Como o ceratocone é uma condição progressiva, o diagnóstico precoce e o acompanhamento 
+                regular com um oftalmologista são essenciais para preservar a visão. Exames de rotina 
+                permitem identificar alterações sutis e ajustar o tratamento conforme necessário, reduzindo 
+                o risco de perda visual.
+              </h3>
+            </div>
+          </div>
+
+          <div class="text">
+            <div class="subtitle">
+              <h1>
+                Pós-Tratamento e Cuidados
+              </h1>
+            </div>
+            <div class="resume">
+              <h3>
+                Após o tratamento, é importante manter uma rotina de cuidados oculares, que inclui:
+                <ul>
+                  <li>Evitar esfregar os olhos.</li>
+                  <li>Manter consultas regulares com o oftalmologista para monitoramento.</li>
+                  <li>Usar lentes de contato com supervisão médica.</li>
+                  <li>Proteger os olhos da exposição solar com óculos escuros de boa qualidade.</li>
+                </ul>
+              </h3>
+            </div>
+          </div>
+
+          <div class="text">
+            <div class="subtitle">
+              <h1>
+                Conclusão
+              </h1>
+            </div>
+            <div class="resume">
+              <h3>
+                O ceratocone pode ser desafiador, mas com os avanços na medicina e os tratamentos 
+                disponíveis, muitos pacientes conseguem manter uma boa qualidade de vida e visão. 
+                Consultas regulares com o oftalmologista são fundamentais para o diagnóstico precoce 
+                e o manejo adequado da doença.
+              </h3>
+            </div>
+          </div>
+          <a href="/">
+            <div class="button">
+              <h1>
+                TRATAMENTO DE CERATOCONE NO ÍCONE
+              </h1>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<footer>
+  <div class="footer-container">
+    <div>
+      
+    </div>
+    <div class="footer-information">
+      <div class="footer-address">
+        <div class="unit">
+          <h2>
+            UNIDADE SÃO PAULO:
+          </h2>
+        </div>
+        <div class="address">
+          <h2>
+            Av. Cidade Jardim, 163 - Itaim Bibi - São Paulo - SP
+          </h2>
+        </div>
+      </div>
+      <div class="footer-address">
+        <div class="unit">
+          <h2>
+            UNIDADE ZONA NORTE:
+          </h2>
+        </div>
+        <div class="address">
+          <h2>
+            R. Conselheiro Portela, 162 - Espinheiro - Recife - PE
+          </h2>
+        </div>
+      </div>
+      <div class="footer-address">
+        <div class="unit">
+          <h2>
+            UNIDADE ZONA SUL:
+          </h2>
+        </div>
+        <div class="address">
+          <h2>
+            R. Barão de Souza Leão, 425. Térreo, 1º e º andar.
+            Emp Pontes Corporate Center - Boa Viagem - Recife - PE
+          </h2>
+        </div>
+      </div>
+      <div class="footer-tel">
+        <div class="name">
+          <h1>
+            TELEFONE:
+          </h1>
+        </div>
+        <div class="tel">
+          4000-2662
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-menu">
+      <div>
+        <h1>
+          <a href="/">
+            O ÍCONE
+          </a>
+        </h1>
+      </div>
+      <div>
+        <h1>
+          <a href="/">
+            SERVIÇOS
+          </a>
+        </h1>
+      </div>
+      <div>
+        <h1>
+          <a href="/especialistas.html">
+            ESPECIALISTAS
+          </a>
+        </h1>
+      </div>
+      <div>
+        <h1>
+          <a href="/doencas-oculares.html">
+            DOENÇAS OCULARES
+          </a>
+        </h1>
+      </div>
+      <div>
+        <h1>
+          <a href="/">
+            TRATAMENTOS
+          </a>
+        </h1>
+      </div>
+      <div>
+        <h1>
+          <a href="/novidades.html">
+            NOVIDADES
+          </a>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="footer-second-container">
+    <div class="imgs-container">
+      <div>
+        <img src="../assets/imgs/icons/zeiss_branco_1.png"/>
+      </div>
+      <div>
+        <img src="../assets/imgs/icons/ona2.png"/>
+      </div>
+      <div>
+        <img src="../assets/imgs/icons/icone-visao-logo.png"/>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
