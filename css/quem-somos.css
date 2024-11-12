@@ -377,7 +377,8 @@ body #inst-banner{
 
 body #inst-banner .inst-container{
   display: flex;
-  width: 80%;
+  width: 100%;
+  align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
   margin: 40px 40px;
@@ -396,6 +397,8 @@ body #inst-banner .inst-container .inst-title h1{
 }
 
 body #inst.banner .inst-container .inst-text{
+  display: flex;
+  justify-content: center;
   margin: 20px 0px;
 }
 
@@ -406,7 +409,8 @@ body #inst-banner .inst-container .inst-text h2{
   font-size: 22px;
   pad: 10px 0px;
   line-height: 35px;
-  width: 60%;
+  width: 90%;
+  text-align: justify;
 }
 
 body #inst-banner .inst-container .inst-text h2 strong{
@@ -466,6 +470,8 @@ body #about .about-container .about-box .about-text .about-text-box h3{
   color: white;
   font-size: 18px;
   line-height: 25px;
+  font-weight: 400;
+  text-align: justify;
 }
 
 body #about .about-container .about-box .about-text .about-text-box h3 strong{
@@ -476,6 +482,10 @@ body #about .about-container .about-box .about-imgs{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+body #about .about-container .about-box .about-imgs .about-img-box{
+  margin: 20px 0px;
 }
 
 body #dif{
