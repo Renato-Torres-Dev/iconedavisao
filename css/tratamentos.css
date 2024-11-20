@@ -211,6 +211,15 @@ header .fixed-header-container .menu nav .menu-item ul li .menu-item-text{
   color: white;
 }
 
+header .fixed-header-container .menu nav .menu-item ul li .menu-item-text-primary{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  cursor: default;
+}
+
 header .fixed-header-container .menu nav .menu-item ul{
   list-style-type: none;
   padding: 0;
