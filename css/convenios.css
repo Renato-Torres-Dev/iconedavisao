@@ -376,7 +376,7 @@ header .menu-mobile{
   }
 }
 
-body #agree-banner{
+/* body #agree-banner{
   display: flex;
   width: 100%;
   height: 650px;
@@ -427,56 +427,17 @@ body #agree-banner .agree-banner-container .agree-resume h3{
   font-weight: 200;
   font-size: 26px;
   line-height: 45px;
+} */
+
+#about{
+  background: #015D8C;
 }
 
-body #about{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  background-color: #015D8C;
+#about .row {
+  margin: 40px 0;
 }
 
-body #about .about-container{
-  display: flex;
-  width: 80%;
-  justify-content: space-evenly;
-  flex-direction: column;
-  margin: 40px;
-}
-
-body #about .about-container .about-title{
-  margin: 20px 0px;
-  display: flex;
-  justify-content: center;
-}
-
-body #about .about-container .about-title h1{
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  font-weight: 600;
-  font-size: 36px;
-  text-align: center;
-}
-
-body #about .about-container .about-resume h2{
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 35px;
-  text-align: center;
-}
-
-body #about .about-container .agree-grid-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 50px;
-  width: 100%;
-  margin: 40px 0px;
-}
-
-body #about .about-container .agree-grid-container .agree-card{
+.agree-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -484,33 +445,26 @@ body #about .about-container .agree-grid-container .agree-card{
   padding: 20px;
 }
 
-body #about .about-container .agree-grid-container .agree-card .agree-card-img{
+.agree-card-img {
   display: flex;
   border-radius: 20px;
   width: 100%;
-  height: auto;
   justify-content: center;
   align-items: center;
 }
 
-body #about .about-container .agree-grid-container .agree-card .agree-card-img img{
+.agree-card-img img {
   width: 250px;
 }
 
-body #about .about-container .agree-grid-container .agree-card .agree-card-title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-body #about .about-container .agree-grid-container .agree-card .agree-card-title h1{
+.agree-card-title h1 {
   font-family: 'Poppins', sans-serif;
   color: white;
   font-weight: 600;
   font-size: 24px;
 }
 
-body #util{
+/* body #util{
   display: flex;
   justify-content: center;
   width: 100%;
@@ -597,9 +551,13 @@ body #util .util-container .util-second ul{
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 300;
+} */
+
+#util {
+  background: linear-gradient(to top, black 85%, #015D8C);
 }
 
-body #contact{
+/* body #contact{
   display: flex;
   width: 100%;
   height: auto;
@@ -677,7 +635,12 @@ body #contact .contact-container .contact-wpp-list h2{
 
 body #contact .contact-container .contact-wpp-list h2 strong{
   font-weight: 600;
+} */
+
+#contact {
+  background-color: #015D8C; /* Substitui a classe bg-primary do Bootstrap, se necessário */
 }
+
 
 footer{
   display: flex;
