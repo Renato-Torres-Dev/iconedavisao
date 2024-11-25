@@ -376,7 +376,7 @@ header .menu-mobile{
   }
 }
 
-body #inst-banner{
+/* body #inst-banner{
   display: flex;
   width: 100%;
   height: 650px;
@@ -424,346 +424,82 @@ body #inst-banner .inst-container .inst-text h2{
 
 body #inst-banner .inst-container .inst-text h2 strong{
   font-weight: 600;
-}
+} */
 
-body #about{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  background-color: #015D8C;
-}
-
-body #about .about-container{
-  display: flex;
-  width: 80%;
-  justify-content: space-evenly;
-  flex-direction: column;
-  margin: 40px 40px;
-}
-
-body #about .about-container .about-title{
-  margin: 20px 0px;
-  display: flex;
-  justify-content: center;
-}
-
-body #about .about-container .about-title h1{
+/* Seção "About" */
+#about h1 {
   font-family: 'Poppins', sans-serif;
-  color: white;
-  font-weight: 600;
-  font-size: 36px;
-  padding: 10px 0px;
-  text-align: center;
 }
 
-body #about .about-container .about-box{
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
-
-body #about .about-container .about-box .about-text{
-  display: flex;
-  flex-direction: column;
-  padding: 0px 40px;
-}
-
-body #about .about-container .about-box .about-text .about-text-box{
-  display: flex;
-  margin: 20px 0px;
-}
-
-body #about .about-container .about-box .about-text .about-text-box h3{
+#about h3 {
   font-family: 'Poppins', sans-serif;
-  color: white;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
+  font-weight: 300;
+  line-height: 1.8;
   text-align: justify;
+  font-size: 1.25rem;
 }
 
-body #about .about-container .about-box .about-text .about-text-box h3 strong{
+#about h3 strong {
   font-weight: 600;
 }
 
-body #about .about-container .about-box .about-imgs{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
 
-body #about .about-container .about-box .about-imgs .about-img-box{
-  margin: 20px 0px;
-}
-
-body #dif{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
+/* Apenas estilos adicionais necessários */
+#dif {
   background-color: black;
 }
 
-body #dif .dif-container{
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  flex-direction: column;
-  margin: 40px 0px;
-}
-
-body #dif .dif-container .dif-title{
-  margin: 20px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-body #dif .dif-container .dif-title h1{
+#dif h1, #dif h2 {
   font-family: 'Poppins', sans-serif;
-  color: white;
-  font-weight: 600;
+}
+
+#dif h1 {
   font-size: 36px;
-  text-align: center;
 }
 
-body #dif .dif-right{
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  margin: 20px 0px;
-}
-
-body #dif .dif-right .dif-box-right{
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  width: 80%;
-  background-color: #015D8C;
-  height: 270px;
-  position: relative;
-}
-
-body #dif .dif-right .dif-box-right .dif-box-right-img{
-  display: flex;
-  position: absolute;
-  align-items: center;
-  height: 170px;
-  top: 50px;
-  left: -100px;
-}
-
-body #dif .dif-right .dif-box-right .dif-box-right-text{
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  margin: 20px 0px;
-  height: 100%;
-  justify-content: flex-start;
-}
-
-body #dif .dif-right .dif-box-right .dif-box-right-text h2{
-  font-family: 'Poppins', sans-serif;
+#dif h2 {
   font-size: 24px;
-  font-weight: 600;
-  color: white;
-  margin-bottom: 20px;
 }
 
-body #dif .dif-right .dif-box-right .dif-box-right-text h3{
+#dif p {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
+  line-height: 1.6;
   text-align: justify;
-  color: white;
-  line-height: 25px;
-  padding-right: 30px;
 }
 
-body #dif .dif-right .dif-box-right .dif-box-right-text h3 strong{
-  font-weight: 600;
-}
-
-body #dif .dif-left{
-  display: flex;
-  width: 100%;
-  justify-content: flex-start;
-  margin: 20px 0px;
-}
-
-body #dif .dif-left .dif-box-left{
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 80%;
+.dif-box-left,
+.dif-box-right {
   background-color: #015D8C;
-  height: 270px;
-  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-body #dif .dif-left .dif-box-left .dif-box-left-img{
-  display: flex;
-  position: absolute;
-  align-items: center;
-  height: 170px;
-  top: 50px;
-  right: -100px;
-}
-
-body #dif .dif-left .dif-box-left .dif-box-left-text{
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  margin: 20px 0px;
-  height: 100%;
-  justify-content: flex-start;
-}
-
-body #dif .dif-left .dif-box-left .dif-box-left-text h2{
+#ona h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  color: white;
-  margin-bottom: 20px;
-  padding-left: 30px;
-}
-
-body #dif .dif-left .dif-box-left .dif-box-left-text h3{
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  text-align: justify;
-  color: white;
-  line-height: 25px;
-  padding-left: 30px;
-}
-
-body #dif .dif-left .dif-box-left .dif-box-left-text h3 strong{
-  font-weight: 600;
-}
-
-body #ona{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  background-color: #015D8C;
-}
-
-body #ona .ona-container{
-  display: flex;
-  width: 80%;
-  justify-content: space-evenly;
-  flex-direction: column;
-  margin: 40px 40px;
-}
-
-body #ona .ona-container .ona-title{
-  margin: 20px 0px;
-  display: flex;
-  justify-content: center;
-}
-
-body #ona .ona-container .ona-title h1{
-  font-family: 'Poppins', sans-serif;
-  color: white;
   font-weight: 600;
   font-size: 36px;
-  padding: 10px 0px;
-  text-align: center;
 }
 
-body #ona .ona-container .ona-box{
-  background-color: white;
-  border-radius: 20px;
-  padding: 40px;
-}
-
-body #ona .ona-container .ona-box .ona-text h3{
-  font-family: 'Poppins',sans-serif;
-  text-align: justify;
+#ona .container p {
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 1.6;
 }
 
-body #ona .ona-container .ona-box .ona-text strong{
-  font-weight: 600;
-}
-
-body #ona .ona-container .ona-box .ona-points{
-  display: flex;
-  margin: 20px 0px;
-}
-
-body #ona .ona-container .ona-box .ona-points .ona-mission{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px 40px;
-  border-right: rgba(1, 93 , 140, 0.3) 2px solid;
-}
-
-body #ona .ona-container .ona-box .ona-points .ona-mission .ona-mission-title h1{
-  padding-bottom: 10px;
+#ona .row h2 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-body #ona .ona-container .ona-box .ona-points .ona-mission .ona-mission-text h3{
+#ona .row p {
   font-family: 'Poppins', sans-serif;
-  font-weight: 300;
   font-size: 14px;
   text-align: center;
-  line-height: 20px;
+  line-height: 1.5;
 }
 
-body #ona .ona-container .ona-box .ona-points .ona-vision{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px 40px;
-  border-right: rgba(1, 93 , 140, 0.3) 2px solid;
-}
-
-body #ona .ona-container .ona-box .ona-points .ona-vision .ona-vision-title h1{
-  padding-bottom: 10px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-body #ona .ona-container .ona-box .ona-points .ona-vision .ona-vision-text h3{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  text-align: center;
-  line-height: 20px;
-}
-
-body #ona .ona-container .ona-box .ona-points .ona-value{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px 40px;
-}
-
-body #ona .ona-container .ona-box .ona-points .ona-value .ona-value-title h1{
-  padding-bottom: 10px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-body #ona .ona-container .ona-box .ona-points .ona-value .ona-value-text h3{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  text-align: center;
-  line-height: 20px;
-}
 
 footer{
   display: flex;
@@ -859,199 +595,4 @@ footer .footer-second-container .imgs-container{
 footer .footer-second-container .imgs-container div img{
   width: 100%;
   height: 150px;
-}
-
-@media (max-width: 768px) {
-  body #inst-banner{
-    height: auto;
-    background-size: cover;
-    justify-content: center;
-  }
-
-  .inst-title{
-    text-align: center;
-  }
-
-  .inst-text{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  body #inst-banner .inst-container .inst-text h2{
-    width: 100%;
-    text-align: justify;
-  }
-
-  body #about .about-container .about-box{
-    flex-direction: column;
-  }
-
-  body #about .about-container .about-box .about-text .about-text-box h3{
-    text-align: justify;
-  }
-
-  body #about .about-container .about-box .about-imgs{
-    align-items: center;
-  }
-
-  body #about .about-container .about-box .about-imgs .about-img-box img{
-    width: 450px;
-    padding: 30px 0px;
-  }
-
-  body #dif .dif-right .dif-box-right .dif-box-right-img{
-    left: -120px;
-  }
-
-  body #dif .dif-right .dif-box-right .dif-box-right-img img{
-    height: 180px;
-    width: 270px;
-  }
-
-  body #dif .dif-right .dif-box-right .dif-box-right-text{
-    margin: 20px 20px;    
-  }
-
-  body #dif .dif-right .dif-box-right .dif-box-right-text h2{
-    font-size: 18px;
-  }
-
-  body #dif .dif-right .dif-box-right .dif-box-right-text h3{
-    font-size: 12px;
-    padding-right: 0px;
-  }
-
-  body #dif .dif-left .dif-box-left .dif-box-left-img{
-    right: -120px;
-  }
-
-  body #dif .dif-left .dif-box-left .dif-box-left-img img{
-    height: 180px;
-    width: 270px;
-  }
-
-  body #dif .dif-left .dif-box-left .dif-box-left-text{
-    margin: 20px 20px;    
-  }
-
-  body #dif .dif-left .dif-box-left .dif-box-left-text h2{
-    font-size: 18px;
-  }
-
-  body #dif .dif-left .dif-box-left .dif-box-left-text h3{
-    font-size: 12px;
-    padding-right: 0px;
-  }
-
-  body #ona .ona-container .ona-box .ona-points{
-    flex-direction: column;
-  }
-
-  body #ona .ona-container .ona-box .ona-points .ona-mission{
-    border-right: 0px;
-    border-bottom: rgba(1, 93 , 140, 0.3) 2px solid;
-  }
-
-  body #ona .ona-container .ona-box .ona-points .ona-vision{
-    border-right: 0px;
-    border-bottom: rgba(1, 93 , 140, 0.3) 2px solid;
-  }
-
-  footer .footer-information .footer-address{
-    margin: 0px;
-  }
-  
-  footer .footer-information .footer-tel{
-    margin-top: 10px;
-  }
-
-  footer .footer-menu{
-    justify-content: space-around;
-  }
-}
-
-@media (max-width: 425px) {
-  body #inst-banner .inst-container .inst-title h1{
-    text-align: center;
-  }
-
-  .inst-text{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  body #inst-banner .inst-container .inst-text h2{
-    width: 100%;
-    text-align: justify;
-  }
-
-  body #isnt.banner .inst-container .inst-text h2{
-    width: 100%;
-    text-align: justify;
-  }
-
-  body #about .about-container .about-box .about-text{
-    padding: 0;
-  }
-
-  body #about .about-container .about-box .about-text .about-text-box h3{
-    text-align: justify;
-  }
-
-  body #about .about-container .about-box .about-imgs .about-img-box img{
-    width: 350px;
-  }
-
-  body #dif .dif-right .dif-box-right{
-    width: 100%;
-  }
-
-  body #dif .dif-left .dif-box-left{
-    width: 100%;
-  }
-
-  body #dif .dif-right .dif-box-right .dif-box-right-img{
-    display: none;
-  }
-
-  body #dif .dif-left .dif-box-left .dif-box-left-img{
-    display: none;
-  }
-
-  body #dif .dif-right .dif-box-right .dif-box-right-text{
-    width: 100%;
-    justify-content: center;
-    margin: 0;
-    padding: 20px;
-  }
-
-  body #dif .dif-left .dif-box-left .dif-box-left-text{
-    width: 100%;
-    justify-content: center;
-    margin: 0;
-    padding: 20px;
-  }
-
-  body #dif .dif-left .dif-box-left .dif-box-left-text h2{
-    padding-left: 0;
-  }
-
-  body #dif .dif-left .dif-box-left .dif-box-left-text h3{
-    padding-left: 0;
-  }
-
-  footer .footer-container{
-    flex-direction: column;
-  }
-
-  footer .footer-menu{
-    margin: 40px 0px;
-    align-items: flex-start;
-  }
-
-  footer .footer-second-container .imgs-container div img{
-    height: 90px;
-  }
 }

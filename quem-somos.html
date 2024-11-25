@@ -158,15 +158,15 @@
   </script>
 
   <main>
-    <section id="inst-banner">
-      <div class="inst-container">
-        <div class="inst-title">
-          <h1>
+    <section id="inst-banner" class="d-flex flex-column justify-content-center align-items-center text-center" style="height: 650px; background-image: url('assets/imgs/backgrounds/bg-quem-somos.png'); background-size: cover;">
+      <div class="inst-container d-flex flex-column justify-content-evenly" style="height: 100%;">
+        <div class="mb-4">
+          <h1 class="text-white fw-bold fs-3">
             Instituto de Cirurgia Ocular do Nordeste
           </h1>
         </div>
-        <div class="inst-text">
-          <h2>
+        <div class="mx-auto" style="max-width: 80%;">
+          <h2 class="text-white fw-normal fs-4" style="line-height: 1.8;">
             O <strong>ÍCONE</strong> é uma referência em oftalmologia na América
             Latina, destacando-se pela excelência no atendimento e pelo uso das 
             mais avançadas tecnologias oftalmológicas. Com foco em oferecer tratamentos
@@ -178,16 +178,21 @@
       </div>
     </section>
 
-    <section id="about">
-      <div class="about-container">
-        <div class="about-title">
-          <h1>
-            ÍCONE: Excelência em Oftalmologia com Tecnologia de Ponta
-          </h1>
+    <section id="about" class="text-white py-5" style="background-color: #015D8C;">
+      <div class="container">
+        <!-- Título -->
+        <div class="row mb-4 text-center">
+          <div class="col">
+            <h1 class="fw-bold fs-3">
+              ÍCONE: Excelência em Oftalmologia com Tecnologia de Ponta
+            </h1>
+          </div>
         </div>
-        <div class="about-box">
-          <div class="about-text">
-            <div class="about-text-box">
+        <!-- Conteúdo Principal -->
+        <div class="row">
+          <!-- Texto -->
+          <div class="col-lg-8">
+            <div class="mb-4">
               <h3>
                 O <strong>Instituto de Cirurgia Ocular do Nordeste (ÍCONE)</strong> 
                 é uma instituição de referência em oftalmologia, localizada no 
@@ -198,19 +203,19 @@
                 oculares, com o que há de melhor em <strong>tecnologia de ponta.</strong>
               </h3>
             </div>
-            <div class="about-text-box">
+            <div class="mb-4">
               <h3>
                 Nossa estrutura moderna foi projetada para garantir o máximo de 
                 conforto, segurança e precisão em <strong>exames, consultas </strong>e 
                 <strong>cirurgias oftalmológicas.</strong> O ÍCONE é o primeiro 
                 <strong>Zeiss Reference Center</strong> da América Latina e conta 
                 com o <strong>ARTEVO 800</strong>, o microscópio digital mais avançado 
-                da América do Sul, que estabelece em novo padrão de <strong>precisão cirúrgica</strong> 
+                da América do Sul, que estabelece um novo padrão de <strong>precisão cirúrgica</strong> 
                 em procedimentos oculares, como tratamento de <strong>glaucoma, catarata, córnea, 
                 retina</strong> e <strong>correção de grau.</strong>
               </h3>
             </div>
-            <div class="about-text-box">
+            <div class="mb-4">
               <h3>
                 A dedicação à excelência se estende a todos os aspectos do nosso 
                 atendimento, com foco na inovação e nas melhores práticas de segurança. 
@@ -219,14 +224,14 @@
                 com a segurança do paciente.
               </h3>
             </div>
-            <div class="about-text-box">
+            <div class="mb-4">
               <h3>
                 Além disso, trabalhamos com diversos convênios, como <strong>CAMPE, Unimed, 
                 Saúde Caixa, CompesaPrev, FUSEX</strong> e <strong>Assefaz</strong>, facilitando 
                 o acesso de nossos pacientes a tratamentos oftalmológicos de alta qualidade.
               </h3>
             </div>
-            <div class="about-text-box">
+            <div>
               <h3>
                 No ÍCONE, nosso compromisso é proporcionar uma visão clara e saudável 
                 para o presente e o futuro de cada paciente, sempre com a mais alta 
@@ -234,39 +239,32 @@
               </h3>
             </div>
           </div>
-          <div class="about-imgs">
-            <div class="about-img-box">
-              <img src="assets/imgs/misc/icone-sp.png"/>
+          <!-- Imagens -->
+          <div class="col-lg-4 d-flex flex-column align-items-center">
+            <div class="mb-3">
+              <img src="assets/imgs/misc/icone-sp.png" class="img-fluid rounded" alt="Unidade SP">
             </div>
-            <div class="about-img-box">
-              <img src="assets/imgs/misc/icone-noite.png"/>
+            <div class="mb-3">
+              <img src="assets/imgs/misc/icone-noite.png" class="img-fluid rounded" alt="Unidade à noite">
             </div>
-            <div class="about-img-box">
-              <img src="assets/imgs/misc/icone-dia.png"/>
+            <div>
+              <img src="assets/imgs/misc/icone-dia.png" class="img-fluid rounded" alt="Unidade de dia">
             </div>
           </div>
         </div>
       </div>
     </section>
+    
 
-    <section id="dif">
-      <div class="dif-container">
-        <div class="dif-title">
-          <h1>
-            Nossos Diferenciais ÍCONE
-          </h1>
+    <section id="dif" class="bg-black py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1 class="text-white fw-bold">Nossos Diferenciais ÍCONE</h1>
         </div>
-      </div>
-      <div class="dif-right">
-        <div class="dif-box-right">
-          <div class="dif-box-right-img">
-            <img src="assets/imgs/misc/img_icone_01.png"/>
-          </div>
-          <div class="dif-box-right-text">
-            <h2>
-              <li>Estrutura: Hospital de Ponta</li>
-            </h2>
-            <h3>
+        <div class="row align-items-center mb-4  dif-box-left">
+          <div class="col-md-5 text-white">
+            <h2 class="fw-bold">Estrutura: Hospital de Ponta</h2>
+            <p>
               O <strong>ÍCONE</strong> está estrategicamente localizado no bairro 
               de <strong>Boa Viagem</strong>, ocupando três andares do luxuoso 
               <strong>Pontes Corporate Center</strong>, anexo ao <strong>Mar Hotel</strong>.
@@ -275,172 +273,125 @@
               shoppings e diversas opções de hotel, o ÍCONE foi projetado para oferecer 
               o melhor em <strong>tratamentos oftalmológicos</strong>. Sua estrutura 
               moderna posiciona Pernambuco como um destaque nacional na oftalmologia.
-            </h3>
+            </p>
+          </div>
+          <div class="col-md-7 d-flex justify-content-around">
+            <img src="assets/imgs/misc/img_icone_01.png" class="img-fluid rounded" alt="Estrutura ÍCONE">
           </div>
         </div>
-      </div>
-      <div class="dif-left">
-        <div class="dif-box-left">
-          <div class="dif-box-left-text">
-            <h2>
-              <li>Acolhimento: Atendimento Personalizado</li>
-            </h2>
-            <h3>
+        <div class="row align-items-center mb-4  dif-box-right">
+          <div class="col-md-7">
+            <img src="assets/imgs/misc/img_icone_02.png" class="img-fluid rounded" alt="Atendimento Personalizado">
+          </div>
+          <div class="col-md-5 text-white">
+            <h2 class="fw-bold">Acolhimento: Atendimento Personalizado</h2>
+            <p>
               No <strong>ÍCONE</strong>, cada paciente recebe atendimento personalizado, 
               com conforto, segurança e pontualidade. Nossa equipe experiente acompanha 
               o paciente em todas as etapas, desde a recepção até o tratamento, garantindo 
               uma experiência acolhedora e diferenciada. Aqui, cada detalhe é pensado para 
               proporcionar um atendimento humanizado e individualizado.
-            </h3>
-          </div>
-          <div class="dif-box-left-img">
-            <img src="assets/imgs/misc/img_icone_02.png"/>
+            </p>
           </div>
         </div>
-      </div>
-      <div class="dif-right">
-        <div class="dif-box-right">
-          <div class="dif-box-right-img">
-            <img src="assets/imgs/misc/img_icone_03.png"/>
-          </div>
-          <div class="dif-box-right-text">
-            <h2>
-              <li>Precisão: Expertise e Tecnologia</li>
-            </h2>
-            <h3>
+        <div class="row align-items-center mb-4 dif-box-left">
+          <div class="col-md-5 text-white">
+            <h2 class="fw-bold">Precisão: Expertise e Tecnologia</h2>
+            <p>
               O <strong>ÍCONE</strong> combina uma equipe médica altamente qualificada 
               com o que há de mais moderno em <strong>tecnologia oftalmológica</strong>. 
               Nosso compromisso é oferecer diagnósticos e tratamentos precisos, utilizando 
               tecnologias avançadas para garantir os melhores resultados em cada procedimento.
-            </h3>
+            </p>
+          </div>
+          <div class="col-md-7 d-flex justify-content-around">
+            <img src="assets/imgs/misc/img_icone_03.png" class="img-fluid rounded" alt="Precisão">
           </div>
         </div>
-      </div>
-      <div class="dif-left">
-        <div class="dif-box-left">
-          <div class="dif-box-left-text">
-            <h2>
-              <li>Tecnologia: Inovação de Alta Precisão</li>
-            </h2>
-            <h3>
-              Com o primerio <strong>Zeiss Reference Center</strong> da América Latina, o 
-              <strong>ÍCONE</strong> é o primeiro no uso de tecnologias exclusivas na oftalmologia. 
-              Equipamentos de última geração, com o <strong>Zeiss Artevo 800, Catalys Precision 
-              Laser System, Suíte Refrativa Zeiss, Ora System, Ngenuity</strong> e <strong>Operio</strong>,
+        <div class="row align-items-center mb-4 dif-box-right">
+          <div class="col-md-7">
+            <img src="assets/imgs/misc/img_icone_04.png" class="img-fluid rounded" alt="Tecnologia de ponta">
+          </div>
+          <div class="col-md-5 text-white">
+            <h2 class="fw-bold">Tecnologia: Inovação de Alta Precisão</h2>
+            <p>
+              Com o primeiro <strong>Zeiss Reference Center</strong> da América Latina, o 
+              <strong>ÍCONE</strong> é pioneiro no uso de tecnologias exclusivas na oftalmologia. 
+              Equipamentos de última geração, como o <strong>Zeiss Artevo 800</strong>, entre outros, 
               garantem precisão, conforto e segurança inigualáveis para o paciente. O <strong>ÍCONE</strong> 
               investe continuamente nas melhores soluções tecnológicas para oferecer tratamentos de 
-              excelência. 
-            </h3>
-          </div>
-          <div class="dif-box-left-img">
-            <img src="assets/imgs/misc/img_icone_04.png"/>
+              excelência.
+            </p>
           </div>
         </div>
-      </div>
-      <div class="dif-right">
-        <div class="dif-box-right">
-          <div class="dif-box-right-img">
-            <img src="assets/imgs/misc/img_icone_05.png"/>
-          </div>
-          <div class="dif-box-right-text">
-            <h2>
-              <li>Segurança: Certificações e Tecnologia</li>
-            </h2>
-            <h3>
+        <div class="row align-items-center mb-4 dif-box-left">
+          <div class="col-md-5 text-white">
+            <h2 class="fw-bold">Segurança: Certificações e Tecnologia</h2>
+            <p>
               No <strong>ÍCONE</strong>, a <strong>segurança do paciente</strong> é prioridade. 
               Com a acreditação nível II da <strong>Organização Nacional de Acreditação (ONA)</strong>, 
               seguimos os mais rigorosos padrões de qualidade em serviços de saúde. O ÍCONE é o único 
-              hospital oftalmológico no Brasil a utilizar o <strong>Sistema Operio</strong>, que conta 
-              com filtros de ar ultrapotentes, praticamente eliminando partículas no ambiente cirúrgico 
-              e reduzindo ao mínimo os riscos de infecção.
-            </h3>
+              hospital oftalmológico no Brasil a utilizar o <strong>Sistema Operio</strong>, que reduz ao mínimo os riscos de infecção.
+            </p>
+          </div>
+          <div class="col-md-7  d-flex justify-content-around">
+            <img src="assets/imgs/misc/img_icone_05.png" class="img-fluid rounded" alt="Certificações ÍCONE">
           </div>
         </div>
-      </div>
-      <div class="dif-left">
-        <div class="dif-box-left">
-          <div class="dif-box-left-text">
-            <h2>
-              <li>Acessibilidade: Atendimento Completo</li>
-            </h2>
-            <h3>
-              O <strong>ÍCONE</strong> oferece uma acessibilidade completa, proporcionando uma experiência 
-              de atendimento diferenciada para pessoas com <strong>necessidades especiais</strong>. Além de 
-              uma estrutura física adaptada, utilizamos uma cadeira de rodas especial que acompanha o paciente 
-              em todas as fases do atendimento - desde consultas até exames e cirurgias. Garantimos <strong>
-              transitabilidade, conforto e segurança</strong> em todas as etapas do tratamento.
-            </h3>
+        <div class="row align-items-center dif-box-right">
+          <div class="col-md-7">
+            <img src="assets/imgs/misc/img_icone_06.png" class="img-fluid rounded" alt="Acessibilidade">
           </div>
-          <div class="dif-box-left-img">
-            <img src="assets/imgs/misc/img_icone_06.png"/>
+          <div class="col-md-5 text-white">
+            <h2 class="fw-bold">Acessibilidade: Atendimento Completo</h2>
+            <p>
+              O <strong>ÍCONE</strong> oferece acessibilidade completa, proporcionando uma experiência 
+              diferenciada para pessoas com <strong>necessidades especiais</strong>. Desde consultas até 
+              exames e cirurgias, garantimos <strong>transitabilidade, conforto e segurança</strong> em todas as etapas do tratamento.
+            </p>
           </div>
         </div>
       </div>
     </section>
+    
 
-    <section id="ona">
-      <div class="ona-container">
-        <div class="ona-title">
-          <h1>
-            Acreditação ONA: Excelência e Segurança no ÍCONE
-          </h1>
-        </div>
-        <div class="ona-box">
-          <div class="ona-text">
-            <h3>
-              O <strong>ÍCONE</strong> é acreditado pela <strong>Organização Nacional de Acreditação (ONA)</strong>,
-              uma entidade independente, não governamental e sem fins lucrativos que certifica a <strong>qualidade dos 
-              serviços de saúde no Brasil.</strong> A acreditação ONA é um selo de excelência, com foco na <strong>
-              segurança do paciente</strong> e na implementação de rigorosos padrões de qualidade.
-            </h3>
-          </div>
-          <div class="ona-points">
-            <div class="ona-mission">
-              <div class="ona-mission-title">
-                <h1>
-                  Missão
-                </h1>
-              </div>
-              <div class="ona-mission-text">
-                <h3>
-                  Proporcionar uma experiência única em atendimento, promovendo a saúde ocular 
-                  e a qualidade de vida dos nossos pacientes, com foco em tecnologia de ponta e 
-                  atendimento personalizado.
-                </h3>
-              </div>
+    <section id="ona" class="py-5" style="background-color: #015D8C;">
+      <div class="container text-center text-white">
+        <h1 class="mb-4">Acreditação ONA: Excelência e Segurança no ÍCONE</h1>
+        <div class="bg-white p-4 rounded">
+          <p class="text-dark text-justify mb-4">
+            O <strong>ÍCONE</strong> é acreditado pela <strong>Organização Nacional de Acreditação (ONA)</strong>,
+            uma entidade independente, não governamental e sem fins lucrativos que certifica a 
+            <strong>qualidade dos serviços de saúde no Brasil.</strong> A acreditação ONA é um selo de excelência, 
+            com foco na <strong>segurança do paciente</strong> e na implementação de rigorosos padrões de qualidade.
+          </p>
+          <div class="row text-dark">
+            <div class="col-md-4 border-end">
+              <h2 class="h5 fw-bold">Missão</h2>
+              <p class="small">
+                Proporcionar uma experiência única em atendimento, promovendo a saúde ocular e a qualidade de vida 
+                dos nossos pacientes, com foco em tecnologia de ponta e atendimento personalizado.
+              </p>
             </div>
-            <div class="ona-vision">
-              <div class="ona-vision-title">
-                <h1>
-                  Visão
-                </h1>
-              </div>
-              <div class="ona-vision-text">
-                <h3>
-                  Ser reconhecido internacionalmente como uma referência em oftalmologia 
-                  oferecendo tratamentos avançados e os melhores resultados em cuidaddos 
-                  com a visão.
-                </h3>
-              </div>
+            <div class="col-md-4 border-end">
+              <h2 class="h5 fw-bold">Visão</h2>
+              <p class="small">
+                Ser reconhecido internacionalmente como uma referência em oftalmologia oferecendo tratamentos avançados 
+                e os melhores resultados em cuidados com a visão.
+              </p>
             </div>
-            <div class="ona-value">
-              <div class="ona-value-title">
-                <h1>
-                  Valores
-                </h1>
-              </div>
-              <div class="ona-value-text">
-                <h3>
-                  Inovação, Competência, Orgulho, Nitidez e Ética são os pilares que guiam 
-                  nossa atuação, sempre buscando o que há de mais moderno e seguro em tratamentos 
-                  oftalmológicos.
-                </h3>
-              </div>
+            <div class="col-md-4">
+              <h2 class="h5 fw-bold">Valores</h2>
+              <p class="small">
+                Inovação, Competência, Orgulho, Nitidez e Ética são os pilares que guiam nossa atuação, sempre buscando o 
+                que há de mais moderno e seguro em tratamentos oftalmológicos.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
   </main>
 </body>
 
