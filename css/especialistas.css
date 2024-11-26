@@ -376,87 +376,33 @@ header .menu-mobile{
   }
 }
 
-body #exp-banner{
-  display: flex;
-  width: 100%;
-  height: 650px;
-  background-image: url(../assets/imgs/backgrounds/bg-quem-somos.png);
-  background-size: cover;
+#exp-banner {
+  height: 650px; /* Altura fixa opcional */
 }
 
-body #exp-banner .exp-container{
-  display: flex;
-  width: 80%;
-  justify-content: space-evenly;
-  flex-direction: column;
-  margin: 40px 40px;
-}
-
-body #exp-banner .exp-container .exp-title h1{
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  font-weight: 600;
+#exp-banner h1 {
   font-size: 36px;
-  line-height: 45px;
-  width: 60%;
 }
 
-body #exp-banner .exp-container .exp-text h2{
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  font-weight: 400;
+#exp-banner h2 {
   font-size: 18px;
-  line-height: 35px;
 }
 
-body #exp-banner .exp-container .exp-text h2 strong{
-  font-weight: 600;
-}
-
-body #exp-banner .exp-container .exp-text h2 a{
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.6s ease;
-}
-
-body #exp-banner .exp-container .exp-text h2 a:hover{
+#exp-banner h2 a:hover {
   text-decoration: underline;
 }
 
-body #medics{
-  display: flex;
-  width: 100%;
-  height: auto;
-  background-color: #015D8C;
+
+#medics {
+  background-color: #015D8C; /* Manter o fundo azul */
 }
 
-body #medics .medics-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  justify-content: space-around;
-  margin: 40px 20px;
-}
-
-body #medics .medics-container .medics-title h1{
-  font-family: 'Poppins',sans-serif;
-  color: white;
-  font-weight: 600;
+#medics h1 {
   font-size: 32px;
-  text-align: center;
-  margin-bottom: 10px;
 }
 
-body #medics .medics-container .medics-subtitle{
-  margin-bottom: 40px;
-}
-
-body #medics .medics-container .medics-subtitle h2{
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  font-size: 20px;  
+#medics h2 {
+  font-size: 20px;
 }
 
 body #medics .medics-container .medics-card-grid{
