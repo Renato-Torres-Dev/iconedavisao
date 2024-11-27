@@ -145,6 +145,28 @@
   </header>
 
   <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+
+    window.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+        mobileMenu.classList.remove('active');
+      }
+    });
+
+    const menuItems = mobileMenu.querySelectorAll('a');
+    menuItems.forEach(item => {
+      item.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+      });
+    });
+  </script>
+
+  <script>
     window.addEventListener('scroll', function() {
       const header = document.getElementById('fixed-header');
 
@@ -460,8 +482,8 @@
       </div>
       <div>
         <h1>
-          <a href="">
-            SERVIÇOS
+          <a href="servicos/turismo-medico.html">
+            TURISMO MÉDICO
           </a>
         </h1>
       </div>
@@ -481,7 +503,7 @@
       </div>
       <div>
         <h1>
-          <a href="">
+          <a href="tratamentos.html">
             TRATAMENTOS
           </a>
         </h1>
