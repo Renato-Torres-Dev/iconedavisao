@@ -379,7 +379,12 @@ header .menu-mobile{
 #catarata .resume ul li {
   list-style-type: circle;
   padding-left: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+#catarata .resume ul li strong {
+  font-weight: 500;
 }
 
 footer{
